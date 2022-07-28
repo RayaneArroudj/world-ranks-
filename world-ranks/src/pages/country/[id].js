@@ -26,6 +26,46 @@ const Country = ({ country }) => {
                   <div className={styles.overview_label}>Area</div>
                 </div>
               </div>
+              <div className={styles.details_panel}>
+                <h4 className={styles.details_panel_heading}>Details</h4>
+                <div className={styles.details_panel_row}>
+                  <div className={styles.details_panel_label}>Capital</div>
+                  <div className={styles.details_panel_value}>
+                    {country.capital}
+                  </div>
+
+                  <div className={styles.details_panel_row}>
+                    <div className={styles.details_panel_label}>Languages</div>
+                    <div className={styles.details_panel_value}>
+                      {country.languages.kat}
+                    </div>
+
+                    <div className={styles.details_panel_row}>
+                      <div className={styles.details_panel_label}>
+                        Currencies
+                      </div>
+                      <div className={styles.details_panel_value}>
+                        {country.currencies.GEL.name}{' '}
+                        {country.currencies.GEL.symbol}
+                      </div>
+                      <div className={styles.details_panel_row}>
+                        <div className={styles.details_panel_label}>
+                          Native name
+                        </div>
+                        <div className={styles.details_panel_value}>
+                          {country.name.nativeName.kat.official}
+                        </div>
+                      </div>
+                      <div className={styles.details_panel_row}>
+                        <div className={styles.details_panel_label}>Gini</div>
+                        <div className={styles.details_panel_value}>
+                          {country.gini.2019}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </Layout>
         );
