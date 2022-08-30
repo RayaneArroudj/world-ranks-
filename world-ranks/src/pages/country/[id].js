@@ -48,15 +48,15 @@ const Country = ({ country }) => {
                   <div className={styles.details_panel_row}>
                     <div className={styles.details_panel_label}>Languages</div>
                     <div className={styles.details_panel_value}>
-                      {country.languages.kat}
+                      {country.languages.spa}
                     </div>
                   </div>
 
                   <div className={styles.details_panel_row}>
                     <div className={styles.details_panel_label}>Currencies</div>
                     <div className={styles.details_panel_value}>
-                      {country.currencies.GEL.name}{' '}
-                      {country.currencies.GEL.symbol}
+                      {country.currencies.CLP.name}{' '}
+                      {country.currencies.CLP.symbol}
                     </div>
                   </div>
                   <div className={styles.details_panel_row}>
@@ -64,13 +64,13 @@ const Country = ({ country }) => {
                       Native name
                     </div>
                     <div className={styles.details_panel_value}>
-                      {country.name.nativeName.kat.official}
+                      {country.name.nativeName.spa.official}
                     </div>
                   </div>
                   <div className={styles.details_panel_row}>
                     <div className={styles.details_panel_label}>Gini</div>
                     <div className={styles.details_panel_value}>
-                      {country.gini[2019]}%
+                      {country.gini[2017]}%
                     </div>
                   </div>
                 </div>
